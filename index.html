@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: inline;
+      }
+      .container {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+      .image {
+        padding: 0%;
+        width: 128vh;
+        height: 100vh;
+        background-color: black;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .f1 {
+        height: 50vh;
+
+        float: left;
+
+      }
+      .f2 {
+        height: 50vh;
+
+        float: right;
+      }
+      .f3 {
+        margin-top: 50vh;
+        height: 50vh;
+        object-fit: cover;
+        position: absolute;
+        width: 60vw;
+
+      }
+      .main {
+        margin-top: -70vh;
+        margin-left: 10vw
+
+      }
+      h1 {
+        font-size: 13vh;
+      }
+      p {
+        padding-top: 1vh; 
+        color: rgb(116, 115, 115);
+        font-size: 1rem; 
+        letter-spacing: 0.03em; 
+      }
+      
+      h4 {
+        font-size: 1rem; 
+        color: rgb(71, 68, 68);
+        padding-top: 1vh; 
+        padding-left: 1.5vw; 
+        border-bottom: 1pt solid rgb(190, 29, 29);
+        height: 3.6vh; 
+        width: 3.3vw; 
+        margin-left: -1vw; 
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 35vw;
+        padding-top: 4vh;
+
+      }
+      .arrow {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 7vw;
+      }
+      .ab1 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 4vw;
+      }
+      .work1 {
+        color: rgb(2, 2, 241);
+      }
+
+      @media (max-width: 768px) {
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+
+        .nav {
+          position: static; 
+          width: 100vw;
+          padding: 10px;
+          background-color: #fff;
+        }
+
+        .main {
+          margin-top: 30vh;
+          margin-left: 5vw;
+          padding: 20px;
+          width: 80vw;
+          text-align: center;
+
+        }
+
+        .container {
+          height: auto; 
+          width: 100vw;
+        }
+
+        .image{
+          height: auto;
+        }
+        .f1 {
+         
+          width: 70vw;
+          height: 30vh;
+        }
+        .f2 {
+          width: 70vw;
+          height: 30vh;
+        }
+        .f3 {
+          margin-top: 30vh;
+          width: 100%;
+          height: 30vh;
+
+        }
+
+        h1 {
+          font-size: 5vh;
+        }
+
+        p {
+
+          font-size: 1rem;
+          
+        }
+
+        h4 {
+          font-size: 1rem;
+          width: 50px;
+          margin-left: 39vw;
+          
+        }
+
+        .arrow {
+          margin-left: 0;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="arrow"></div>
+      <div class="ab1">
+        <div class="about">About</div>
+        <div class="work">Work</div>
+        <div class="work1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+        </svg></div>
+
+
+      </div>
+
+    </div>
+
+    
+    <div class="container">      
+      <div class="image">
+        <img class="f1" src="1.png" />
+        <img class="f2" src="2.png" />
+        <img class="f3" src="3.png" />
+      </div>
+    </div>
+    <div class="main">
+    <h1>Hello,</h1><br>
+    <p>
+      Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Corrupti,
+      venam quisamws<br> consequatur suipit maies velit quos mnm<br>
+      praesentium dicta, voluptas eaque? Fugit sed<br> quos tempora ex ea ab
+      voluptatem!
+    </p><br>
+    <h4>
+      Read
+    </h4>
+  </div>
+
+  </body>
+</html>
